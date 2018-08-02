@@ -12,10 +12,10 @@ def main():
     """
     str_input = raw_input()
     count = 0
-    for i in range(len(s)-3):
+    for i in range(len(str_input)-3):
         if str_input[i:i+3] == "bob":
             count += 1
     print(count)
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()

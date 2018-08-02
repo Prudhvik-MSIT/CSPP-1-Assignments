@@ -10,7 +10,7 @@ def main():
     """
     main function
     """
-    str_input = raw_input()
+    str_input = input()
     count = 0
     for i in range(len(str_input)-3):
         if str_input[i:i+3] == "bob":

@@ -13,9 +13,9 @@ def main():
     # remove pass and start your code here
     count = 0
     for i in range(len(s)-3):
-        if s[i:i+3]=="bob":
+        if s[i:i+3] == "bob":
             count += 1
     print(count)
-    
+
 if __name__== "__main__":
     main()

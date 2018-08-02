@@ -15,7 +15,7 @@ def main():
     for i in range(len(s)-3):
         if s[i:i+3]=="bob":
             count += 1
-    print count
+    print(count)
     
 if __name__== "__main__":
     main()

@@ -7,13 +7,13 @@ program should print
 Number of times bob occurs is: 2'''
 
 def main():
-    s = raw_input()
-    # print(s)
-    # the input string is in s
-    # remove pass and start your code here
+    """
+    main function
+    """
+    str_input = raw_input()
     count = 0
     for i in range(len(s)-3):
-        if s[i:i+3] == "bob":
+        if str_input[i:i+3] == "bob":
             count += 1
     print(count)
 

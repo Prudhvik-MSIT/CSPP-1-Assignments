@@ -7,7 +7,7 @@ program should print
 Number of times bob occurs is: 2'''
 
 def main():
-    s = input()
+    s = raw_input()
     # print(s)
     # the input string is in s
     # remove pass and start your code here

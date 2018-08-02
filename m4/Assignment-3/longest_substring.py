@@ -34,16 +34,13 @@ def main():
     max_seq_ends = 0
 
     for i in range(len(str_input)-1):
-        # print(str_input[i],str_input[i+1])
         if ord(str_input[i]) <= ord(str_input[i+1]):
             seq_count += 1
-            # print(seq_count,i)
         else:
             seq_count = 0
         if seq_count > max_seq_count:
             max_seq_count = seq_count
             max_seq_ends = i+1
-    # print(max_seq_ends-max_seq_count+1,max_seq_ends)
     print(str_input[max_seq_ends-max_seq_count:max_seq_ends+1])
 
 if __name__ == "__main__":

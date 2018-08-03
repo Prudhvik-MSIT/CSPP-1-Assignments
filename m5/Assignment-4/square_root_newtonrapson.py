@@ -14,15 +14,15 @@ def main():
     """
     main function
     """
-    INP_VAR = int(input())
+    inp_var = int(input())
     # epsilon and step are initialized
     # don't change these values
-    EPSILON = 0.01
+    epsilon = 0.01
     # your code starts here
-    nth_guess = INP_VAR/2
-    while nth_guess <= INP_VAR:
-        if abs(nth_guess**2 - INP_VAR) >= EPSILON:
-            nth_guess = nth_guess - (nth_guess**2 - INP_VAR)/(2*nth_guess)
+    nth_guess = inp_var/2
+    while nth_guess <= inp_var:
+        if abs(nth_guess**2 - inp_var) >= epsilon:
+            nth_guess = nth_guess - (nth_guess**2 - inp_var)/(2*nth_guess)
         else:
             break
 

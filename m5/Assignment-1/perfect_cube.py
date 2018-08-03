@@ -15,8 +15,10 @@ def main():
 	# watch out for the data type of value stored in s
 	# your code starts here
 	GUESS = 0
+
 	while GUESS**3 < INPUT_VAR:
 		GUESS += 1
+
 	if GUESS**3 == INPUT_VAR:
 		print(str(INPUT_VAR)+" is a perfect cube")
 	else:

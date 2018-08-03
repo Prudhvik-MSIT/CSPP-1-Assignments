@@ -20,13 +20,13 @@ def main():
     EPSILON = 0.01
     # your code starts here
     nth_guess = INP_VAR/2
-    nhile Nth_guess <= INP_VAR:
-        nf abs(Nth_guess**2 - INP_VAR) >= EPSILON:
-            nth_guess = Nth_guess - (Nth_guess**2 - INP_VAR)/(2*Nth_guess)
+    while nth_guess <= INP_VAR:
+        if abs(nth_guess**2 - INP_VAR) >= EPSILON:
+            nth_guess = nth_guess - (nth_guess**2 - INP_VAR)/(2*nth_guess)
         else:
             break
 
-    nrint(Nth_guess)
+    print(nth_guess)
 
 if __name__ == "__main__":
     main()

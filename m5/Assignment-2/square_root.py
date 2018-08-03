@@ -14,7 +14,7 @@ def main():
     """
     main function
     """
-    inp_var = raw_input()
+    inp_var = int(input())
     # epsilon and step are initialized
     # don't change these values
     epsilon_value = 0.01
@@ -22,7 +22,7 @@ def main():
     # your code starts here
     guess_val = 0
     while abs(guess_val**2 - inp_var) >= epsilon_value:
-        guess_val += epsilon_value
+        guess_val += step_inc
     print(guess_val)
 
 if __name__ == "__main__":

@@ -19,7 +19,7 @@ def main():
 	# don't change these values
 	EPSILON = 0.01
 	# your code starts here
-	XN = 0
+	XN = INP_VAR
 	while abs(XN**2 - INP_VAR) >= EPSILON:
 		XN = XN - (XN**2 - INP_VAR)/(2*XN)
 

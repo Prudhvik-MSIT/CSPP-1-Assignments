@@ -19,10 +19,10 @@ HI_GUESS = INPUT_VAR
 GUESS = (LO_GUESS+HI_GUESS)/2
 
 while abs(GUESS**2 - INPUT_VAR) >= EPSILON:
-	if GUESS**2 < INPUT_VAR:
-		LO_GUESS = GUESS
-	else:
-		HI_GUESS = GUESS
-	GUESS = (LO_GUESS + HI_GUESS)/2
+    if GUESS**2 < INPUT_VAR:
+        LO_GUESS = GUESS
+    else:
+        HI_GUESS = GUESS
+    GUESS = (LO_GUESS + HI_GUESS)/2
 
 print(GUESS)

@@ -1,3 +1,4 @@
+"""
 # Write a python program to find the square root of the given number
 # using approximation method
 
@@ -8,7 +9,7 @@
 # testcase 2
 # input: 49
 # output: 6.999999999999991
-
+"""
 EPSILON = 0.01
 INPUT_VAR = int(input())
 # your code starts here

@@ -22,5 +22,5 @@ def main():
 	else:
 		print(str(INPUT_VAR)+" is not a perfect cube")
 
-if __name__== "__main__":
+if __name__ == "__main__":
 	main()

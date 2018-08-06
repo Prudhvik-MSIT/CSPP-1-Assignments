@@ -5,7 +5,7 @@ def main():
     str_inp = input()
     cnt_inp = 0
     for ind_inp in range(len(str_inp)-1):
-        if len(str_inp[ind_inp:ind_inp+3]) == 3 and str_inp[ind_inp:ind_inp+3] in 'bob':
+        if str_inp[ind_inp:ind_inp+3] in 'bob':
             cnt_inp += 1
     print(str(cnt_inp))
 

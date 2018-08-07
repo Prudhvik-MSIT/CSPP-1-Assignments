@@ -61,13 +61,10 @@ def paying_debt_off_in_a_year(initial_balance, annual_interest_rate):
     upper_bound = initial_balance*((1+annual_interest_rate/12.0)**12)/12.0
     mfp = 0
     lower_bound = initial_balance/12.0
-    # print(lower_bound,upper_bound)
     mir = annual_interest_rate/12.0
     while True:
-        # print(mfp)
         ubm = initial_balance
         mfp = (lower_bound+upper_bound)/2.0
-        # mfp = int(mfp*100)/100.0
         for _ in range(12):
             mub = ubm - mfp
             ubm = mub + mir*mub

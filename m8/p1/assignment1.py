@@ -21,8 +21,8 @@ def factorial_val(n_val):
 
 def main():
     '''main function'''
-    a = input()
-    print(factorial_val(int(a)))
+    a_val = input()
+    print(factorial_val(int(a_val)))
 
 if __name__ == "__main__":
     main()

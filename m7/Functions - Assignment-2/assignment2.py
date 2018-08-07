@@ -53,11 +53,11 @@ def paying_debt_off_in_a_year(initial_balance, annual_interest_rate):
     .                (Monthly interest rate x Monthly unpaid balance)
 
     """
+    mir = annual_interest_rate/12.0
     mfp = 0
     while True:
         ubm = initial_balance
         for _ in range(12):
-            mir = annual_interest_rate/12.0
             mub = ubm - mfp
             ubm = mub + mir*mub
         # print(mfp)

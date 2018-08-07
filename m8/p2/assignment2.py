@@ -4,7 +4,7 @@ Date: 07-08-2018
 '''
 # Exercise: Assignment-2
 # Write a Python function, sum_of_digits, that takes in one number
-# and returns the sum of digits of given number.
+# and returns the sum of digits of given number
 
 # This function takes in one number and returns one number.
 

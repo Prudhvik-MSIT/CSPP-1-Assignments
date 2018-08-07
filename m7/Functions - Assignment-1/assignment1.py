@@ -23,9 +23,11 @@ def main():
     balance - the outstanding balance on the credit card
     annualInterestRate - annual interest rate as a decimal
     monthlyPaymentRate - minimum monthly payment rate as a decimal
-    For each month, calculate statements on the monthly payment and remaining balance
+    For each month, calculate statements on the monthly payment and remaining
+    balance.
     At the end of 12 months, print out the remaining
-    balance. Be sure to print out no more than two decimal digits of accuracy - so print'''
+    balance. Be sure to print out no more than two decimal digits of accuracy
+    - so print'''
 
     data = input()
     data = data.split(' ')

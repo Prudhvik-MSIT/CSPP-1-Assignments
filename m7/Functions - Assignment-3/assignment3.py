@@ -1,7 +1,6 @@
 '''
-Author:Swapnika
-Created on 06-08-2018
-
+Author: Prudhvik Chirunomula
+Date: 06-08-2018
 Functions - Assignment-3 - Using Bisection Search to Make the Program Faster
 
 You'll notice that in Problem 2, your monthly payment had to be a multiple of

@@ -77,7 +77,6 @@ def paying_debt_off_in_a_year(initial_balance, annual_interest_rate):
             upper_bound = mfp
         else:
             break
-    # mfp = int(mfp*100)/100.0
     return "Lowest Payment: "+str(round(mfp, 2))
 
 def main():

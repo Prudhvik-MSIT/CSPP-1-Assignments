@@ -17,7 +17,7 @@ def get_guessed_word(secret_word, letters_guessed):
     for each_char in letters_guessed:
         if each_char in guessed_word:
             guessed_word = guessed_word.replace(each_char, "_")
-    print(guessed_word)
+    # print(guessed_word)
     for each_char in guessed_word:
         if each_char != "_":
             # print(secret_word)

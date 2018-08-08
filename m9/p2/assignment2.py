@@ -19,7 +19,7 @@ def get_guessed_word(secret_word, letters_guessed):
             guessed_word += guessed_word.replace(each_char, "_")
     for each_char in guessed_word:
         if each_char != "_":
-            secret_word.replace(each_char, "_")
+            secret_word = secret_word.replace(each_char, "_")
     return secret_word
 
 def main():

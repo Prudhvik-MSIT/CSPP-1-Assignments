@@ -6,10 +6,10 @@ def main():
     n_inp = int(input())
     res_out = 1
     neg_flag = 1
-    if n_inp>0:
+    if n_inp < 0:
         neg_flag = -1
         n_inp *= neg_flag
-    while n_inp != 0:
+    while n_inp > 0:
         res_out *= n_inp%10
         n_inp //= 10
     print(res_out*neg_flag)

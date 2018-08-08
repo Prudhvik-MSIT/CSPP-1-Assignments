@@ -11,14 +11,14 @@ def is_word_guessed(secret_word, letters_guessed):
     '''
     secret_word: string, the word the user is guessing
     letters_guessed: list, what letters have been guessed so far
-    returns: boolean, 
+    returns: boolean,
         True if all the letters of secret_word are in letters_guessed;
         False otherwise
     '''
     # FILL IN YOUR CODE HERE...
     for each_char in letters_guessed:
         if each_char in secret_word:
-            secret_word = secret_word.replace(each_char,"")
+            secret_word = secret_word.replace(each_char, "")
     return secret_word == ""
 
 def main():

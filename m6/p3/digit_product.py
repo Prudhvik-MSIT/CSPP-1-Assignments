@@ -9,10 +9,13 @@ def main():
     if n_inp < 0:
         neg_flag = -1
         n_inp *= neg_flag
-    while n_inp > 0:
-        res_out *= n_inp%10
-        n_inp //= 10
-    print(res_out*neg_flag)
+    if n_inp == 0:
+        print(0)
+    else:
+        while n_inp > 0:
+            res_out *= n_inp%10
+            n_inp //= 10
+        print(res_out*neg_flag)
 
 if __name__ == "__main__":
     main()

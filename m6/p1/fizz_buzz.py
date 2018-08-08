@@ -8,9 +8,9 @@ def main():
     '''
     Read number from the input, store it in variable num.
     '''
-    NUM = int(input())
+    num_input = int(input())
     i = 1
-    while i <= NUM:
+    while i <= num_input:
         if (i%3 == 0 and i%5 == 0):
             print("Fizz")
             print("Buzz")

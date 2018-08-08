@@ -7,13 +7,13 @@ def main():
     '''
     Read string from the input, store it in variable str_input.
     '''
-    STR_INPUT = input()
-    S_OUT = ""
-    for char in STR_INPUT:
-        if char == '!' or char == '@' or char == '#' or char == '$' or char == '%' or char == '^' or char == '&' or char == '*':
-            S_OUT = S_OUT + " "
+    str_input = input()
+    str_out = ""
+    for char in str_input:
+        if char in "!@#$%^&*":
+            str_out = str_out + " "
         else:
-            S_OUT = S_OUT + char
-    print(S_OUT)
+            str_out = str_out + char
+    print(str_out)
 if __name__ == "__main__":
     main()

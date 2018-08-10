@@ -1,12 +1,12 @@
 '''
 Exercise: Assignment-2
-Implement the updateHand function. Make sure this function has no side
+Implement the update_hand function. Make sure this function has no side
 effects: i.e., it must not mutate the hand_dict passed in. Before pasting
 your function definition here, be sure you've passed the appropriate
 tests in test_ps4a.py.
 '''
 
-def updateHand(hand_dict, word_given):
+def update_hand(hand_dict, word_given):
     """
     Assumes that 'hand_dict' has all the letters in word_given.
     In other word_givens, this assumes that however many times
@@ -29,14 +29,15 @@ def updateHand(hand_dict, word_given):
     return hand_dict
 
 def main():
-    n = input()
+    '''main function'''
+    no_of_inputs = input()
     adict = {}
-    for i in range(int(n)):
+    for _ in range(int(no_of_inputs)):
         data = input()
-        l = data.split()
-        adict[l[0]] = int(l[1])
+        list_of_data = data.split()
+        adict[list_of_data[0]] = int(list_of_data[1])
     data1 = input()
-    print(updateHand(adict,data1))
+    print(update_hand(adict, data1))
 
 if __name__ == "__main__":
     main()

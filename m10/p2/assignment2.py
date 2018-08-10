@@ -75,6 +75,7 @@ def hangman(secret_word):
     for guesses_left in range(len(secret_word)+3, 0, -1):
         if guessed_word == secret_word:
             success_flag = 1
+            break
         print("Guessed word so far: "+str(guessed_word))#,secret_word)
         guess = input("You have "+str(guesses_left)+" guesses left\nEnter your guess: ")
         for iter_no, iter_char in enumerate(secret_word):

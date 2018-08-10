@@ -32,7 +32,7 @@ def is_valid_word(word_input, hand_dict, words_list):
     char_count = 0
     word_present_flag = 0
     for each_word in words_list:
-        print("35")
+        print(each_word, word_input)
         if each_word == word_input:
             print("37")
             word_present_flag == 1

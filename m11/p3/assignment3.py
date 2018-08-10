@@ -31,26 +31,26 @@ def is_valid_word(word_input, hand_dict, words_list):
     # TO DO ... <-- Remove this comment when you code this function
     char_count = 0
     if word_input in words_list:
-    	print(word_input, hand_dict, words_list)
-	    for each_char in word_input:
-    		if each_char in hand_dict:
-    			char_count += 1
+        print(word_input, hand_dict, words_list)
+        for each_char in word_input:
+            if each_char in hand_dict:
+                char_count += 1
     print(char_count)
     return char_count == len(word_input)
 
 
 def main():
-	word=input()
-	n=int(input())
-	adict={}
-	for i in range(n):
-		data=input()
-		l=data.split()
-		adict[l[0]]=int(l[1])
-	l2=input().split()
-	print(is_valid_word(word,adict,l2))
-		
+    word=input()
+    n=int(input())
+    adict={}
+    for i in range(n):
+        data=input()
+        l=data.split()
+        adict[l[0]]=int(l[1])
+    l2=input().split()
+    print(is_valid_word(word,adict,l2))
+        
 
 
 if __name__== "__main__":
-	main()
+    main()

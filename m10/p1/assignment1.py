@@ -14,7 +14,7 @@ def get_available_letters(letters_guessed):
     '''
     all_string = "abcdefghijklmnopqrstuvwxyz"
     for iter_str in letters_guessed:
-        all_string = all_string.replace("")
+        all_string = all_string.replace(iter_str,"")
     return all_string
 
 def main():

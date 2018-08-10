@@ -34,6 +34,7 @@ def is_valid_word(word_input, hand_dict, words_list):
 	    for each_char in word_input:
     		if each_char in hand_dict:
     			char_count += 1
+    print(char_count)
     return char_count == len(word_input)
 
 

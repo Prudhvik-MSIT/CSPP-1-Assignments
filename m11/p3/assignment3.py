@@ -30,28 +30,33 @@ def is_valid_word(word_input, hand_dict, words_list):
     """
     # TO DO ... <-- Remove this comment when you code this function
     char_count = 0
-    print(word_input)
-    print(words_list)
-    print(word_input in words_list)
-    if word_input in words_list:
-        print(word_input, hand_dict, words_list)
-        for each_char in word_input:
-            if each_char in hand_dict:
-                char_count += 1
-    print(char_count)
-    return char_count == len(word_input)
+    word_present_flag = 0
+    for each_word in words_list:
+        if each_word == word_input:
+            word_present_flag == 1
+    if not word_present_flag:
+        return False
+    for each_char in word_input:
+        if each_char in hand_dict:
+            hand_dict[each_char] -= 1
+            if hand_dict[each_char] < 0:
+                return False
+        else:
+            return False
+    return True
 
 
 def main():
-    word=input()
-    n=int(input())
-    adict={}
-    for i in range(n):
-        data=input()
-        l=data.split()
-        adict[l[0]]=int(l[1])
-    l2=input().split()
-    print(is_valid_word(word,adict,l2))
+    '''main function'''
+    word = input()
+    no_of_words = int(input())
+    hand_dict = {}
+    for _ in range(no_of_words):
+        data = input()
+        data = data.split()
+        hand_dict[data[0]] = int(data[1])
+    words_list = input().split()
+    print(is_valid_word(word,hand_dict,words_list))
         
 
 

@@ -37,7 +37,7 @@ def create_social_network(data):
     data = data.split("\n")
     # print(data)
     for each_line in data:
-        if each_line != "":
+        if each_line != "" and "follows" in each_line:
             each_line = each_line.split(" follows ")
             # print(each_line)
             key = each_line[0]

@@ -38,10 +38,10 @@ def create_social_network(data):
     # print(data)
     for each_line in data:
         each_line = each_line.split(" follows ")
-        # print(each_line)
-        key = each_line[0]
+        print(each_line)
+        # key = each_line[0]
         # value = each_line[1].split(',')
-        print(each_line[1])
+        # print(each_line[1])
         # if "," in each_line[1]:
         #     value = each_line[1].split(",")
         # else:

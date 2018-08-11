@@ -34,6 +34,9 @@ def create_social_network(data):
 
     # remove the pass below and start writing your code
     social_network = {}
+    data = data.split("\n")
+    print(data)
+    return social_network
     
 
 def main():
@@ -46,8 +49,8 @@ def main():
         i += 1
         string += input()
         string += '\n'
-    print(string)
-    # print(create_social_network(string))
+    # print(string)
+    print(create_social_network(string))
 
 if __name__ == "__main__":
     main()

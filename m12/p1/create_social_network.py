@@ -41,12 +41,12 @@ def create_social_network(data):
         # print(each_line)
         key = each_line[0]
         # value = each_line[1].split(',')
-        # print(each_line[1])
-        if "," in each_line[1]:
-            value = each_line[1].split(",")
-        else:
-            value = [each_line[1]]
-        social_network[key] = value
+        print(each_line[1])
+        # if "," in each_line[1]:
+        #     value = each_line[1].split(",")
+        # else:
+        #     value = [each_line[1]]
+        # social_network[key] = value
     return social_network
     
 

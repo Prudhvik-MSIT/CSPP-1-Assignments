@@ -40,7 +40,7 @@ def create_social_network(data):
         each_line = each_line.split(" follows ")
         # print(each_line)
         key = each_line[0]
-        value = each_line[1].split(',')
+        value = str(each_line[1]).split(',')
         # print(each_line[1])
         social_network[key] = value
     return social_network

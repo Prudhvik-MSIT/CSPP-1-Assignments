@@ -42,7 +42,7 @@ def create_social_network(data):
             value = each_line[1].split(",")
             social_network[key] = value
     return social_network
-    
+
 
 def main():
     '''

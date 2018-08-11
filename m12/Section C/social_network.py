@@ -1,7 +1,7 @@
 # *************** file io ********************************************
 def parse_line(line):
 	line = line.replace(".\n","")
-	line = line.split(" follows ")
+	line = line.split(" is followed by ")
 	network_dict[line[0]] = line[1].split(",")
 
 def load_data():
@@ -11,6 +11,14 @@ def load_data():
 	while line:
 		parse_line(line)
 		line = in_file.readline()
+
+# *************** console i/o*****************************************
+def load_data():
+	line = input()
+	line = line.split(".\n")
+	for i in line:
+		i = i.split(" is followed by ")
+		network_dict[i[0]] = i[1].split(",")
 
 # *************** n/w functions **************************************
 def print_network():
@@ -79,7 +87,7 @@ def main():
 	# print_network()
 	# print(remove_follower("Prudhvik","Debra"))
 	# print(get_followers("Prudhvik"))
-	print("most popular: "+max_followers())
+	# print("most popular: "+max_followers())
 
 if __name__ == "__main__":
 	network_dict = {}

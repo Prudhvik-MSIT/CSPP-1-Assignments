@@ -1,12 +1,12 @@
-John follows Bryant,Debra,Walter.
-Bryant follows Olive,Ollie,Freda,Mercedes.
-Mercedes follows Walter,Robin,Bryant.
-Olive follows John,Ollie.
-Debra follows Walter,Levi,Jennie,Robin.
-Walter follows John,Levi,Bryant.
-Levi follows Ollie,John,Walter.
-Ollie follows Mercedes,Freda,Bryant.
-Jennie follows Levi,John,Freda,Robin.
-Robin follows Ollie.
-Freda follows Olive,John,Debra.
+John is followed by Bryant,Debra,Walter.
+Bryant is followed by Olive,Ollie,Freda,Mercedes.
+Mercedes is followed by Walter,Robin,Bryant.
+Olive is followed by John,Ollie.
+Debra is followed by Walter,Levi,Jennie,Robin.
+Walter is followed by John,Levi,Bryant.
+Levi is followed by Ollie,John,Walter.
+Ollie is followed by Mercedes,Freda,Bryant.
+Jennie is followed by Levi,John,Freda,Robin.
+Robin is followed by Ollie.
+Freda is followed by Olive,John,Debra.
  
